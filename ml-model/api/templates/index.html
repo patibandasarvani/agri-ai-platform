@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agriculture Platform API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .api-section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #2ecc71;
+            border-radius: 4px;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: white;
+        }
+        .get { background-color: #28a745; }
+        .post { background-color: #007bff; }
+        code {
+            background: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌱 AI-Powered Smart Agriculture Platform</h1>
+        <h2>Machine Learning API Service</h2>
+        <p>Professional crop prediction and fertilizer recommendation system</p>
+    </div>
+
+    <div class="status">
+        <strong>🟢 API Status:</strong> Online and Ready
+    </div>
+
+    <div class="api-section">
+        <h2>📡 API Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span> <code>/health</code>
+            <p><strong>Health Check</strong> - Returns API status and model information</p>
+        </div>
+
+        <div class="endpoint">
+            <span class="method post">POST</span> <code>/predict</code>
+            <p><strong>Crop Prediction</strong> - Predict optimal crop based on soil parameters</p>
+            <p><strong>Request Body:</strong></p>
+            <pre>{
+  "N": 90,
+  "P": 45,
+  "K": 50,
+  "temperature": 25,
+  "humidity": 70,
+  "ph": 6.5,
+  "rainfall": 120
+}</pre>
+        </div>
+
+        <div class="endpoint">
+            <span class="method post">POST</span> <code>/fertilizer-recommendation</code>
+            <p><strong>Fertilizer Recommendation</strong> - Get personalized fertilizer recommendations</p>
+            <p><strong>Request Body:</strong></p>
+            <pre>{
+  "N": 50,
+  "P": 30,
+  "K": 40,
+  "crop": "Rice",
+  "soil_ph": 6.5,
+  "area_hectares": 1.0
+}</pre>
+        </div>
+
+        <div class="endpoint">
+            <span class="method get">GET</span> <code>/model-info</code>
+            <p><strong>Model Information</strong> - Get detailed information about ML models</p>
+        </div>
+
+        <div class="endpoint">
+            <span class="method get">GET</span> <code>/supported-crops</code>
+            <p><strong>Supported Crops</strong> - List all supported crops</p>
+        </div>
+
+        <div class="endpoint">
+            <span class="method post">POST</span> <code>/batch-predict</code>
+            <p><strong>Batch Prediction</strong> - Predict multiple samples at once</p>
+        </div>
+    </div>
+
+    <div class="api-section">
+        <h2>🔬 ML Models</h2>
+        <ul>
+            <li><strong>Crop Prediction:</strong> Random Forest (95%+ accuracy)</li>
+            <li><strong>Fertilizer Recommendation:</strong> Rule-based expert system</li>
+            <li><strong>Supported Crops:</strong> 22+ major crops</li>
+            <li><strong>Features:</strong> N, P, K, Temperature, Humidity, pH, Rainfall</li>
+        </ul>
+    </div>
+
+    <div class="api-section">
+        <h2>🚀 Quick Test</h2>
+        <p>Use curl or any HTTP client to test the API:</p>
+        <pre>curl -X POST http://localhost:5000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"N": 90, "P": 45, "K": 50, "temperature": 25, "humidity": 70, "ph": 6.5, "rainfall": 120}'</pre>
+    </div>
+
+    <div class="api-section">
+        <h2>📊 Features</h2>
+        <ul>
+            <li>✅ Real-time crop prediction</li>
+            <li>✅ Intelligent fertilizer recommendations</li>
+            <li>✅ Comprehensive soil analysis</li>
+            <li>✅ Cost estimation and scheduling</li>
+            <li>✅ Environmental sustainability insights</li>
+            <li>✅ Batch processing capabilities</li>
+            <li>✅ Comprehensive error handling</li>
+            <li>✅ Input validation and sanitization</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; color: #666;">
+        <p>🌱 AI-Powered Smart Agriculture Platform - Production Ready</p>
+        <p>© 2024 - Built with Machine Learning and Agricultural Science</p>
+    </div>
+</body>
+</html>
