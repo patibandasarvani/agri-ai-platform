@@ -15,7 +15,7 @@ A comprehensive agricultural intelligence system that provides crop predictions,
 - **💊 Pesticide Recommendations** - Context-aware treatment suggestions
 - **📸 Multiple Input Methods** - Image upload, camera capture, and file selection
 - **📋 Treatment Tracking** - Complete disease management system
-- **📱 Mobile Responsive** - Works seamlessly on all devices
+- **� Data Visualization** - Interactive charts and analytics
 
 ## 🌱 Overview
 
