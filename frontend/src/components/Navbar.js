@@ -14,7 +14,8 @@ import {
   Sun,
   Droplets,
   Thermometer,
-  Wind
+  Wind,
+  Microscope
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -32,6 +33,7 @@ const Navbar = () => {
     { path: '/dashboard', label: 'Home', icon: Home },
     { path: '/predict-crop', label: 'Crop Prediction', icon: Sprout },
     { path: '/fertilizer', label: 'Fertilizer', icon: Beaker },
+    { path: '/plant-disease/upload', label: 'Plant Disease', icon: Microscope },
     { path: '/history', label: 'History', icon: History },
     { path: '/profile', label: 'Profile', icon: User },
     ...(user?.role === 'admin' ? [{ path: '/admin', label: 'Admin', icon: BarChart3 }] : []),

@@ -24,6 +24,11 @@ import AdminPanel from './pages/AdminPanel';
 import Logout from './pages/Logout';
 import NotFound from './pages/NotFound';
 
+// Plant Disease Detection Pages
+import PlantDiseaseUpload from './pages/PlantDiseaseUpload';
+import PlantDiseaseResult from './pages/PlantDiseaseResult';
+import PlantDiseaseHistory from './pages/PlantDiseaseHistory';
+
 // Create a client for React Query
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -77,6 +82,23 @@ function App() {
                 <Route path="/profile" element={
                   <ProtectedRoute>
                     <Profile />
+                  </ProtectedRoute>
+                } />
+                
+                {/* Plant Disease Detection Routes */}
+                <Route path="/plant-disease/upload" element={
+                  <ProtectedRoute>
+                    <PlantDiseaseUpload />
+                  </ProtectedRoute>
+                } />
+                <Route path="/plant-disease/result/:predictionId" element={
+                  <ProtectedRoute>
+                    <PlantDiseaseResult />
+                  </ProtectedRoute>
+                } />
+                <Route path="/plant-disease/history" element={
+                  <ProtectedRoute>
+                    <PlantDiseaseHistory />
                   </ProtectedRoute>
                 } />
                 
